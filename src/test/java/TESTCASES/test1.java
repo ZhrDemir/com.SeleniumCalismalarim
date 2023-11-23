@@ -122,12 +122,13 @@ public class test1 {
             //  15. 'Devam' düğmesine tıklayın
          driver.findElement(By.linkText("Continue")).click();
 
+
          //  16. 'Kullanıcı adı olarak oturum açıldı' seçeneğinin görünür olduğunu doğrulayın
-         WebElement LoginIn = driver.findElement(By.xpath("//*[@*=' Logged in as ']"));
+         WebElement LoginIn = driver.findElement(By.xpath("//a[text()=' Logged in as ']"));
          Assert.assertTrue(LoginIn.isDisplayed());
 
          //  17. 'Hesabı Sil' butonuna tıklayın
-         driver.findElement(By.xpath("//*[text()=' Delete Account'")).click();
+         driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
 
          //  18. 'HESAP SİLİNDİ!' seçeneğini doğrulayın. görünür ve 'Devam' düğmesine tıklayın
          WebElement delete = driver.findElement(By.xpath("//*[@*='title text-center']"));

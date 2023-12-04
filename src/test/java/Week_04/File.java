@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 
 public class File extends Before_After {
 
+
     @Test
     public void test01(){
        // 1. Tests packagenin altina bir class oluşturun : C05_UploadFile
